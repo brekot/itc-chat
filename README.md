@@ -35,7 +35,7 @@
 Наши стили
 
 <pre>
-<li nk rel="stylesheet" type="text/css" href="./css/style.css">
+link rel="stylesheet" type="text/css" href="./css/style.css"
 </pre>
 
 Подключение и настройки<br>
