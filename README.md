@@ -4,8 +4,9 @@
 
 Подключаем jQuery, если еще не подключен
 
+<pre>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
+</pre>
 <br>
 
 Подключаем jQuery UI для возможности ресайза окна по вертикали (если ресайз не нужен, можно не подключать, тогда в настройках необходимо указать windowResizable: false)
