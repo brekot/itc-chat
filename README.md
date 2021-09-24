@@ -7,40 +7,40 @@
 <pre>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </pre>
-<br>
 
 Подключаем jQuery UI для возможности ресайза окна по вертикали (если ресайз не нужен, можно не подключать, тогда в настройках необходимо указать windowResizable: false)
 
+<pre>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-
-<br>
+</pre>
 
 Подключаем для проверки телефона по маске (если проверка не нужна, можно не подключать, тогда в настройках необходимо указать formPhoneMask: false)
 
+<pre>
 <script src="./js/jquery.mask.min.js"></script>
-
-<br>
+</pre>
 
 Подключаем для работы Звонка с сайта
 
+<pre>
 <script src="./js/infinity.click.to.call.js"></script>
-
-<br>
+</pre>
 
 Наш основной скрипт
 
+<pre>
 <script src="./js/script.js"></script>
-
-<br>
+</pre>
 
 Наши стили
 
+<pre>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-
-<br>
+</pre>
 
 Подключение и настройки<br>
 
+<pre>
 <script type="text/javascript">
 $(function(){
 
@@ -49,6 +49,7 @@ $(function(){
 	});
 })
 </script>
+</pre>
 
 <h2>Настройки:</h2>
 
