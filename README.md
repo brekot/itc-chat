@@ -35,7 +35,7 @@
 Наши стили
 
 <pre>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<li nk rel="stylesheet" type="text/css" href="./css/style.css">
 </pre>
 
 Подключение и настройки<br>
@@ -45,7 +45,7 @@
 $(function(){
 
 	$('body').itOnlineCons({
-		chatPath: 'chat.html'
+		modPath: '/itc-chat/'
 	});
 })
 </script>
