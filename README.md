@@ -2,31 +2,43 @@
 
 <h2>Подключение</h2>
 
-Подключаем jQuery, если еще не подключен
+Подключаем jQuery, если еще не подключен<br>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-Подключаем jQuery UI для возможности ресайза окна по вертикали (если ресайз не нужен, можно не подключать, тогда в настройках необходимо указать windowResizable: false )
+<br><br>
+
+Подключаем jQuery UI для возможности ресайза окна по вертикали (если ресайз не нужен, можно не подключать, тогда в настройках необходимо указать windowResizable: false)<br>
 
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
-Подключаем для проверки телефона по маске (если проверка не нужна, можно не подключать, тогда в настройках необходимо указать formPhoneMask: false)
+<br><br>
+
+Подключаем для проверки телефона по маске (если проверка не нужна, можно не подключать, тогда в настройках необходимо указать formPhoneMask: false)<br>
 
 <script src="./js/jquery.mask.min.js"></script>
 
-Подключаем для работы Звонка с сайта
+<br><br>
+
+Подключаем для работы Звонка с сайта<br>
 
 <script src="./js/infinity.click.to.call.js"></script>
 
-Наш основной скрипт
+<br><br>
+
+Наш основной скрипт<br>
 
 <script src="./js/script.js"></script>
 
-Наши стили
+<br><br>
+
+Наши стили<br>
 
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-Подключение и настройки
+<br><br>
+
+Подключение и настройки<br>
 
 <script type="text/javascript">
 $(function(){
@@ -39,56 +51,56 @@ $(function(){
 
 <h2>Настройки:</h2>
 
-Общие настройки
-windowPlase: 'right',       // right, left - положение окна чата
-windowResizable: true,      // true, false - позволять измениять размер окна чата по вертикали? (если false - подключить jquery-ui не нужно)
-openSpeed: 400,             // milliseconds - скорость открытия (всплывания) окна чата
-modPath: '/',               // (path) - путь до файлов (/ - если файлы располагаются в корне /folder/ - если в папке folder и т.д.)
-autoShowInterval: false,    // false или milliseconds - время, через которое чат раскроется сам
-openFirst: 'form',          // chat, form - что позывать перым при раскрытии? Чат или форму
-
-Что подключаем
-showWidgetBtn: true,        // true, false (boolean) - показывать виджет кнопок?
-showWidgetChat: true,       // true, false (boolean) - показывать виджет Чата?
-showWidgetForm: true,       // true, false (boolean) - показывать виджет Формы?
-showWidgetCall: true,       // true, false (boolean) - показывать виджет Звонка?
-
-Названия
-chatName: 'Онлайн-чат',     // (string) - название виджета Чата
-formName: 'Заказать звонок',// (string) - название виджета Формы
-callName: 'Позвоните нам',  // (string) - название виджета Звонка
-
+Общие настройки<br>
+windowPlase: 'right',       // right, left - положение окна чата<br>
+windowResizable: true,      // true, false - позволять измениять размер окна чата по вертикали? (если false - подключить jquery-ui не нужно)<br>
+openSpeed: 400,             // milliseconds - скорость открытия (всплывания) окна чата<br>
+modPath: '/',               // (path) - путь до файлов (/ - если файлы располагаются в корне /folder/ - если в папке folder и т.д.)<br>
+autoShowInterval: false,    // false или milliseconds - время, через которое чат раскроется сам<br>
+openFirst: 'form',          // chat, form - что позывать перым при раскрытии? Чат или форму<br>
+<br>
+Что подключаем<br>
+showWidgetBtn: true,        // true, false (boolean) - показывать виджет кнопок?<br>
+showWidgetChat: true,       // true, false (boolean) - показывать виджет Чата?<br>
+showWidgetForm: true,       // true, false (boolean) - показывать виджет Формы?<br>
+showWidgetCall: true,       // true, false (boolean) - показывать виджет Звонка?<br>
+<br>
+Названия<br>
+chatName: 'Онлайн-чат',     // (string) - название виджета Чата<br>
+formName: 'Заказать звонок',// (string) - название виджета Формы<br>
+callName: 'Позвоните нам',  // (string) - название виджета Звонка<br>
+<br>
 Внешний вид
-bgColor: 'blue',            // blue, red, green, grey - цвет Чата
-bgAlterColor: false,        // #343434 (hex) - альтернативный цвет чата 
-iconColor: 'white',         // white, black - цвет шрифтов и иконок
-
-Настройки формы
-formInputName: 'Ваше имя',  // string or false - название поля ввода Имени (false - не показывать)
-formInputPhone: 'Телефон',  // string - название поля ввода Телефона
-formBtnName: 'Жду звонка',  // string - название кнопки отправки формы
-formText: 'Здравствуйте!<br>Хотите мы перезвоним Вам и расскажем подробнее о наших продуктах и услугах?', // string - текст сообщения
-formSuccess: 'Ваша заявка принята!<br>Мы перезвоним вам в ближайшее время', // string - текст при успешной отправке формы
-formUrl: '//ccserver.infinity.ru:8443/data/scenario/?ScenarioName=callback', // string - адрес отправки
-timeFrom: 9,                // int or false - перезвонить С
-timeTo: 20,                 // int or false - перезвонить До
-formPhoneMask: '+7 (000) 000-00-00', // string или false - маска телефона (если false - проверка отключена и подключать jquery.mask не нужно)
-
-Настройки Звонка с сайта
-callHost: 'pbx.infinity.ru',
-callPort: 5063,
-callSecure: true,
-callFrom: '100',
-callTo: '100',
-callPass: 'pAssw0rd_100!',
-callTimeout: 15000,
-callFinish: 'Завершить звонок',// (string)
-
-Настройки времени
-timeOffset: 3,              // int - смещение времени
-timeWorkChatFrom: false,    // int or false - показывать чат С
-timeWorkChatTo: false,      // int or false - показывать чат До
-timeWorkFormFrom: false,    // int or false - показывать форму С
-timeWorkFormTo: false,      // int or false - показывать форму До
-timeWorkCallFrom: false,    // int or false - показывать звонок С
+bgColor: 'blue',            // blue, red, green, grey - цвет Чата<br>
+bgAlterColor: false,        // #343434 (hex) - альтернативный цвет чата<br>
+iconColor: 'white',         // white, black - цвет шрифтов и иконок<br>
+<br>
+Настройки формы<br>
+formInputName: 'Ваше имя',  // string or false - название поля ввода Имени (false - не показывать)<br>
+formInputPhone: 'Телефон',  // string - название поля ввода Телефона<br>
+formBtnName: 'Жду звонка',  // string - название кнопки отправки формы<br>
+formText: 'Здравствуйте!<br>Хотите мы перезвоним Вам и расскажем подробнее о наших продуктах и услугах?', // string - текст сообщения<br>
+formSuccess: 'Ваша заявка принята!<br>Мы перезвоним вам в ближайшее время', // string - текст при успешной отправке формы<br>
+formUrl: '//ccserver.infinity.ru:8443/data/scenario/?ScenarioName=callback', // string - адрес отправки<br>
+timeFrom: 9,                // int or false - перезвонить С<br>
+timeTo: 20,                 // int or false - перезвонить До<br>
+formPhoneMask: '+7 (000) 000-00-00', // string или false - маска телефона (если false - проверка отключена и подключать jquery.mask не нужно)<br>
+<br>
+Настройки Звонка с сайта<br>
+callHost: 'pbx.infinity.ru',<br>
+callPort: 5063,<br>
+callSecure: true,<br>
+callFrom: '100',<br>
+callTo: '100',<br>
+callPass: 'pAssw0rd_100!',<br>
+callTimeout: 15000,<br>
+callFinish: 'Завершить звонок',// (string)<br>
+<br>
+Настройки времени<br>
+timeOffset: 3,              // int - смещение времени<br>
+timeWorkChatFrom: false,    // int or false - показывать чат С<br>
+timeWorkChatTo: false,      // int or false - показывать чат До<br>
+timeWorkFormFrom: false,    // int or false - показывать форму С<br>
+timeWorkFormTo: false,      // int or false - показывать форму До<br>
+timeWorkCallFrom: false,    // int or false - показывать звонок С<br>
 timeWorkCallTo: false,      // int or false - показывать звонок До
