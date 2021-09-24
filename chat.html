@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<head>
+
+	<meta charset="utf-8">
+	<meta content="text/html; charset='UTF-8'" http-equiv="Content-Type">
+
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scrollbar.js"></script>
+	<script src="js/chat.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+
+			$('#chatForm').itOnlineChat({
+				'host': 'https://ccserver.infinity.ru:9443/',
+				'accountID': '5001816455',
+				'accountKey': 'ee95a3dd803e414caa949310c52b3087',
+
+				'showCategoryScreen': true, // Показывать Category screen? (boolean)
+				'titleCategoryScreen': 'Текст приветствия Category', // Заголовок Category screen (string)
+				'listCategoryScreen': ['Узнать об акциях', 'Узнать место и режим работы магазина', 'Оформить интернет-заказ'], // Пункты для выбора (array)
+
+				'showWelcomeScreen': true, // Показывать Welcome screen? (boolean)
+				'titleWelcomeScreen': 'Текст приветствия Welcome', // Заголовок Welcome screen (string)
+				'inputsWelcomeScreen': { // Поля для показа в форме Welcome screen. Ключи name, phone, email, message передаются на сервер (НЕ МЕНЯТЬ без изменений на сервере, но могут быть указаны не все, если какое либо поле не нужно)
+					'name': {
+						'text': 'Имя', // Название которое показывается пользователю
+						'type': 'text', // Тип (text, tel, email, textarea)
+						'required': true // Обязательное? (boolean)
+					},
+					'phone': {
+						'text': 'Телефон',
+						'type': 'tel',
+						'required': true
+					},
+					'email': {
+						'text': 'Электронная почта',
+						'type': 'email',
+						'required': true
+					},
+					'message': {
+						'text': 'Текст сообщения',
+						'type': 'textarea',
+						'required': true
+					},
+				},
+				'validateJsEmail': true, // Включить дополнительную проверку email (boolean)
+				'validateJsPhone': true, // Включить дополнительную проверку телефона (boolean)
+
+				'firstScreen': 'category' // Какой экран показывается первым? (category или welcome) - по умолчанию welcome всегда первый
+			});
+		});
+	</script>
+
+</head>
+<body>
+</body>
+</html>
